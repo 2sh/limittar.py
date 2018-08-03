@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 #
-#	limittar.py
-#	Copyright (C) 2018 Seán <contact@2sh.me>
+#	limittar - Limiting the size of tar archives
+#
+#	Copyright (C) 2018 Seán Hewitt <contact@2sh.me>
 #
 #	This program is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -289,8 +290,7 @@ def _to_byte_type(value):
 	else:
 		return int(value)
 
-
-if __name__ == "__main__":
+def _main():
 	import argparse
 	
 	parser = argparse.ArgumentParser(description="limittar")
@@ -356,3 +356,6 @@ if __name__ == "__main__":
 	ltar.join()
 	if args.tar_out:
 		ltar.close()
+
+if __name__ == "__main__":
+	main()
