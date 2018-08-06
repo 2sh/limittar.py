@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
 	name="limittar",
-	version="1.0.3",
+	version="1.0.4",
 	
 	author="Seán Hewitt",
 	author_email="contact@2sh.me",
